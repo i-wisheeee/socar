@@ -551,6 +551,7 @@ display: block;
 @media screen and (max-width: 1310px) {
 .footer .inner {
     flex-direction: column;
+}
 .footer .inner .footer_nav {
     order: -1; 
     /*inner에게 flex가있어서 사용가능함
@@ -559,7 +560,7 @@ display: block;
 
     } 
 
-}
+
 }/* 1310 */
 
 @media screen and (max-width: 1024px) {
@@ -589,8 +590,46 @@ display: block;
     .main .inner {
         width: calc(100% - 32px);
     }
+     .main_visual .text h2 {
+        font-size: 42px;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+    }
+    .main_visual .text p {
+    font-size: 18px;
+    }
+    .footer .inner .footer_nav .gnb {
+    gap: 24px;
+    flex-direction: column;
+}
+
+.footer .inner .info_wrap .address ul li::before {
+display: none;
+}
+.footer .inner .info_wrap .address ul {
+    flex-direction: column;
+   
+}
+.footer .inner .info_wrap .address .footer_logo {
+    margin-bottom: 10px;
+}
+
+.footer .inner .info_wrap .service_wrap .service {
+margin-top: 48px;
+}
+.footer .inner .info_wrap .service_wrap .service li {
+font-size: 13px;
+font-weight: bold;
+}
+.footer .inner .footer_nav .gnb li {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+.footer .inner .footer_nav .gnb li .depth-01 {
+font-weight: bold;
+font-size: 13px;
+}
 }/* 768 */
     
-@media screen and (max-width: 480px) {
-    
-}
+
